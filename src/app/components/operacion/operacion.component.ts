@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ContactosService } from '../../services/contactos.service';
 import { HistorialService } from '../../service/historial.service';
 
 @Component({
