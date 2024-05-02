@@ -1,0 +1,24 @@
+<body>
+        <h3 class="pantalla">{{pantalla}}</h3>
+        <button (click)="delete($event)" style="width: 70px;">C</button>
+
+    <div class="espacio">
+            <div class="numeros">
+                @for (numero of numeros; track numero){
+                    <button (click)="writeNumber(numero)">{{numero}}</button>
+                }
+                <button (click)="writeNumber(operacion)">{{operacion}}</button>
+                <button (click)="operar($event)">=</button>
+            </div>
+    </div>
+
+    <h3> El resultado es: {{resultado}} </h3>
+
+    <label for="txtMsg">Historial del Operaciones:</label>
+    <ul>
+        @for(msg of messages; track msg){
+            <li>{{msg}}</li>
+        }
+    </ul>  
+    <button (click)="limpiar()">Limpiar</button>
+</body>

@@ -1,0 +1,19 @@
+<header class="header">
+    <p class="titulo">Web-Matematicas</p>
+    <nav class="navegacion">
+        <a class="items" routerLink ="inicio">Inicio</a>
+        <a class="items" routerLink ="suma">Suma</a>
+        <a class="items" routerLink ="resta">Resta</a>
+        <a class="items" routerLink ="multiplicacion">Multiplicacion</a>
+        <a class="items" routerLink ="division">Division</a>
+        <a class="items" routerLink ="acercade">Acerca De</a>
+    </nav>
+    <div class="espacio_tiempo">
+        <p> Tiempo de Conexion de: <strong>{{usuario}}</strong><strong class="time">{{tiempoConexion}}</strong>
+        <app-sesion [intervalo]="1" (tiempo)="actualizar($event) "#tiempoSesion></app-sesion>
+        <button (click)="tiempoSesion.reset()" class="inter1">Reset</button>
+        <button (click)="nuevoIntervalo(1)" class="inter2">1</button>
+        <button (click)="nuevoIntervalo(3)" class="inter3">3</button>
+        <button (click)="nuevoIntervalo(5)" class="inter4">5</button></p>
+    </div>
+</header>
