@@ -5,6 +5,7 @@ import { MultiplicacionComponent } from './pages/multiplicacion/multiplicacion.c
 import { DivisionComponent } from './pages/division/division.component';
 import { AcercadeComponent } from './pages/acercade/acercade.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
+import { PostComponent } from './components/post/post.component';
 
 export const routes: Routes = [
     {path:"inicio", component: InicioComponent},
@@ -13,5 +14,6 @@ export const routes: Routes = [
     {path:"multiplicacion", component: MultiplicacionComponent},
     {path:"division", component: DivisionComponent},
     {path:"acercade", component: AcercadeComponent},
+    {path:"post", component: PostComponent},
 ];
 
