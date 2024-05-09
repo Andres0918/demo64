@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "project-ach64": {
+      "hosting": {
+        "demo64": [
+          "project-ach64"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "project-ach64"
+  }
+}

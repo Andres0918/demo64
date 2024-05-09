@@ -6,7 +6,7 @@
           @if (msg.id < 6) {
               <li (click)="showComments(msg)"><strong>{{msg.title}}</strong></li>  
               <br>
-              <div class="additional-info" id="info-{{msg.id}}" style="display: none;">
+              <div class="title" id="info-{{msg.id}}" style="display: none;">
                   <p><strong>album id:</strong> {{msg.albumId}}</p>
                   <p><strong>id:</strong> {{msg.id}}</p>
                   <p><strong>url:</strong> {{msg.url}}</p>
