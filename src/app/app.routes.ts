@@ -8,6 +8,8 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { PostComponent } from './components/post/post.component';
 import { MensajesComponent } from './pages/mensajes/mensajes.component';
 
+
+
 export const routes: Routes = [
     {path:"inicio", component: InicioComponent},
     {path:"suma", component: SumaComponent},

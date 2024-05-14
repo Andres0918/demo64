@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HistorialService } from '../../service/historial.service';
+import { HistorialService } from '../../historial/historial.service';
 
 @Component({
   selector: 'app-operacion',

@@ -3,6 +3,7 @@ import { PostService } from '../../services/post.service';
 import { HttpClientModule } from '@angular/common/http';
 
 
+
 @Component({
   selector: 'app-post',
   standalone: true,
@@ -39,12 +40,9 @@ export class PostComponent {
               infoDiv.style.display = 'none';
           }
       }
+    this.postService.guardar(msg)
+      .then(() => console.log('API guardada en Firebase'))
+      .catch(error => console.error('Error al guardar la API en Firebase:', error));
   }
-
-
-
-
-
-
 
 }
