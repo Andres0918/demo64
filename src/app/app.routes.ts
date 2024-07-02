@@ -7,6 +7,7 @@ import { AcercadeComponent } from './pages/acercade/acercade.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { PostComponent } from './components/post/post.component';
 import { MensajesComponent } from './pages/mensajes/mensajes.component';
+import { JavaComponent } from './components/java/java.component';
 
 
 
@@ -19,5 +20,6 @@ export const routes: Routes = [
     {path:"acercade", component: AcercadeComponent},
     {path:"post", component: PostComponent},
     {path:"mensajes", component: MensajesComponent},
+    {path:"serviceJava", component:JavaComponent},
 ];
 
