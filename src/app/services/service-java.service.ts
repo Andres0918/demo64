@@ -18,4 +18,12 @@ export class ServiceJavaService {
   getAllClientes(): Observable<Cliente[]> {
     return this.http.get<Cliente[]>(this.baseUrl);
   }
+
+  updateCliente(cliente: Cliente): Observable<Cliente> {
+    return this.http.put<Cliente>(this.baseUrl, cliente);
+  }
+
+  deleteCliente(cedula: string): Observable<void> {
+    return this.http.delete<void>(`${this.baseUrl}/${cedula}`);
+  }
 }
